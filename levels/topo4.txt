@@ -1,0 +1,76 @@
+                              
+          ########            
+          #...$$$#            
+      #####......#            
+      #..........#            
+ ######.#########.#           
+ #..+...#        #.########   
+ #..###############.......####
+ #..### #...##....+.........a1
+ ##...###.#.##.####.......####
+###'''''..#....# #.########   
+#..'''###########.#           
+#.#####     ####.#            
+#....########...#             
+####............#             
+   ##########.b.#             
+            ##2##             
+                              
+
+{
+	"level": {
+		"ambient": [120, 120, 120],
+		"topology": 4,
+		"cell": "floor",
+		"name": "Four shall be enough"
+	},
+	"#": {
+		"cell": "stonewall"
+	},
+	".": {
+		"cell": "floor"
+	},
+	"'": {
+		"cell": "grass"
+	},
+	"$": {
+		"item": "gold"
+	},
+	"+": {
+		"cell": {
+			"type": "door",
+			"closed": 1
+		}
+	},
+	"1": {
+		"cell": {
+			"type": "door",
+			"label": "Back to the main hub",
+			"portal": {
+				"target": "file:start#left",
+				"direction": "right"
+			}
+		}
+	},
+	"a": {
+		"cell": {
+			"id": "start"
+		}
+	},
+	"2": {
+		"cell": {
+			"type": "door",
+			"closed": 1,
+			"label": "To even more twisted area",
+			"portal": {
+				"target": "file:topo6#start",
+				"direction": "bottom"
+			}
+		}
+	},
+	"b": {
+		"cell": {
+			"id": "hex"
+		}
+	}
+}

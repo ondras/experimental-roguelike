@@ -1,0 +1,98 @@
+           
+    ###    
+    #a#    
+    #1#    
+    #.#    
+   ##.##   
+####...####
+b2...@...3c
+####...####
+   ##.##   
+    #.#    
+    #.#    
+    #4#    
+    #d#    
+           
+
+{
+	"level": {
+		"ambient": [120, 120, 120],
+		"topology": 8,
+		"cell": "floor",
+		"name": "Central crossroads"
+	},
+	"#": {
+		"cell": "stonewall"
+	},
+	".": {
+		"cell": "floor"
+	},
+	"@": {
+		"cell": {
+			"id": "start"
+		}
+	},
+	"1": {
+		"cell": {
+			"id": "top"
+		}
+	},
+	"a": {
+		"cell": {
+			"type": "staircase-down",
+			"label": "To the realms of procedural generation",
+			"portal": {
+				"direction": "fade",
+				"target": "js:random#start"
+			}
+		}
+	},
+	"2": {
+		"cell": {
+			"id": "left"
+		}
+	},
+	"b": {
+		"cell": {
+			"type": "door",
+			"closed": 1,
+			"label": "To reduced topology rooms",
+			"portal": {
+				"direction": "left",
+				"target": "file:topo4#start"
+			}
+		}
+	},
+	"3": {
+		"cell": {
+			"id": "right"
+		}
+	},
+	"c": {
+		"cell": {
+			"type": "door",
+			"closed": 1,
+			"label": "To the lighting dungeon",
+			"portal": {
+				"direction": "right",
+				"target": "file:lighting#start"
+			}
+		}
+	},
+	"4": {
+		"cell": {
+			"id": "bottom"
+		}
+	},
+	"d": {
+		"cell": {
+			"type": "door",
+			"closed": 1,
+			"label": "To mysterious teleporters",
+			"portal": {
+				"direction": "bottom",
+				"target": "file:portals#start"
+			}
+		}
+	}
+}

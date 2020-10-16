@@ -1,0 +1,71 @@
+                             
+       # # ! #               
+      # . a . #              
+     # . . . . #             
+    # + . . . #              
+   # . # # # # #             
+    # . . . . . #            
+   # . # # # # . #           
+  # . # # #   # . #          
+ # . . . . # # # R #         
+  # . . . . / . . + #        
+   # W . . # # # # . #       
+    # # # #       # + # # #  
+                   # . . . # 
+                  # . . . R #
+                 # . . . $ # 
+                  # . $ $ #  
+                   # # # #   
+                             
+
+{
+	"level": {
+		"ambient": [120, 120, 120],
+		"topology": 6,
+		"cell": "floor",
+		"name": "Hexes FTW"
+	},
+	"#": {
+		"cell": "stonewall"
+	},
+	".": {
+		"cell": "floor"
+	},
+	"$": {
+		"item": "gold"
+	},
+	"+": {
+		"cell": {
+			"type": "door",
+			"closed": 1
+		}
+	},
+	"/": {
+		"cell": {
+			"type": "door",
+			"closed": 0
+		}
+	},
+	"!": {
+		"cell": {
+			"type": "door",
+			"closed": 1,
+			"label": "Back to the rectangular areas",
+			"portal": {
+				"target": "file:topo4#hex",
+				"direction": "top"
+			}
+		}
+	},
+	"a": {
+		"cell": {
+			"id": "start"
+		}
+	},
+	"W": {
+		"light": [240, 240, 240]
+	},
+	"R": {
+		"light": [240, 100, 30]
+	}
+}
